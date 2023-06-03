@@ -162,7 +162,7 @@ footer ul li{
 .filaportafolio{
     display: flex; /*Flex Box*/
     flex-direction: row; /* Los 4 elementos( cards) en fila*/
-    flex-wrap: wrap; /*Si no hay espacio se pone en COLUMNA (responsive)*/
+    flex-wrap: wrap; /*Si no hay espacio se pone en COLUMNA (responsive)*
     justify-content: space-between; /*espacios equisdistantes*/
     gap: 30px 30px;
     margin-bottom: 15px;
@@ -207,7 +207,6 @@ footer ul li{
 /****************************************************************CARD EXPERIENCIA**************************************************************/
 
 .gridexp{
-    display: grid;
     grid-template-columns: repeat(4,350px);
     grid-gap: 10px;
     justify-content: space-between;
@@ -215,64 +214,5 @@ footer ul li{
     flex-wrap: wrap;
     flex-direction: row; 
 }
-
-.cardexp{
-    background-color: #000000;
-    border-radius: 15px;
-    color: #ffffff;
-    padding: 10px 15px;
-
-}
-
-.cardexp h2{
-    margin-bottom: 5px;
-}
-
-.cardexp h3{
-    margin-bottom: 20px;
-}
-
-.cardexp p{
-     margin-bottom: 20px;
-}
-
-.cardexp ul{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.cardexp li{
-    height: 30px;
-    width: 160px;
-}
-
-/*******************************************************FORMULARIO***********************************************************/
-
-.itemform{
-    display: grid;
-    grid-template-columns: 150px 350px;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.itemform label{
-    font-weight: 700;
-}
-
-.itemform input, .itemform textarea{
-    border-radius: 5px;
-    border: 1px solid #f6fbfffa;
-}
-
-input[type="submit"]{
-    background-color: #0d0d0c;
-    border: 1px solid #0d0d0c;
-    color: #f0f8fffa;
-    padding: 10px;
-    grid-column: 2/3;
-    justify-self: end;
-}
-
-
 
 

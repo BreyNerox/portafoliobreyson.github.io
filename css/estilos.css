@@ -12,16 +12,16 @@ h2{
     line-height: 36px; /*Configura el espacio entre las lineas*/
 }
 h3{
-    color: #00ffff9a;
+    color: #607bf4ed;
     font-size: 18px; /*Tamaño de la letra de h3*/
-    font-weight: 300;
+    font-weight: 350;
 }
 nav{
-    position: fixed; /*Para que se mueva el meno*/
+    position: fixed; /*Para que se mueva el menu*/
     width: 100%;
     height: 55px;
-    background-color: #10070768;
-    border-bottom: 1px solid #fbfafadf;
+    background-color: #000000;
+    border-bottom: 1px solid #fbfafafc;
     padding-top: 10px;
     text-align: center;
 }
@@ -31,7 +31,11 @@ nav ul{
 }
 
 nav ul li{
-    padding-top: 12px;
+    padding-top: 5px;
+}
+
+div ul li img{
+    float: right;  /*xxxxxxxxxxxxxxxx*/
 }
 
 section{
@@ -40,6 +44,7 @@ section{
 
 p{
     text-align: justify;
+    padding-top: 5px;
 }
 
 cite{
@@ -73,6 +78,7 @@ ul{
 li{
     float: left;
     margin-right: 5px;
+    text-align: right; 
 }
 
 button{
@@ -86,7 +92,7 @@ footer{
 }
 
 footer ul{
-    display: inline block;
+    display: inline-block;
 }
 
 footer ul li{
@@ -97,33 +103,48 @@ footer ul li{
     color: #d2a213;
 }
 
-.seccion{
+.section{
     padding: 10px 100px 10px 100px;
 }
 
-.logo{
-    padding-top: 0px;
+.section h2{
+    padding-top: 10px;
 }
 
-#redessociales{
+.section h3{
+    padding-top: 12px; /*--------------------*/
+}
+
+.logo{
+    padding-top: 10px;
+}
+
+.logo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes_sociales{
     margin-top: 20px;
     list-style: none;
 }
 
 #inicio{
-    background-image: url("img/inicio.png");
+    background-image: url("../img/inicio.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 280px;
-    padding-top: 75;
+    min-height: 300px;
+    padding-top: 65px;
 }
 
-#experiencia{
-    background-color: #faf9f9ee;
-    color: black;
+#Experiencia{
+    background-color: white;
+    color: #000000;
 }
 
-#portafolio{
+#Portafolio{
     border-top: 1px solid #d2a213; /*para la línea amarilla*/
 }
 
@@ -136,7 +157,7 @@ footer ul li{
     padding: 5px;
 }
 
-/******************************************** CARDS PORTAFOLIO **************************************************/
+/****************************************** CARDS PORTAFOLIO **************************************************/
 
 .filaportafolio{
     display: flex; /*Flex Box*/
@@ -149,8 +170,8 @@ footer ul li{
 }
 
 .card{
-    width: 250px; /*ANCHO*/
-    background-color: #0d0d0c;
+    width: 260px; /*ANCHO*/
+    background-color: #060606ee;
     border-radius: 15px;
 }
 
@@ -176,7 +197,7 @@ footer ul li{
 
 .card .sep{
     margin:0 5px 5px 0;
-    height: 26px;
+    height: 28px;
 }
 
 .card .masinfo button{
@@ -185,18 +206,22 @@ footer ul li{
 
 /****************************************************************CARD EXPERIENCIA**************************************************************/
 
-.griexp{
+.gridexp{
     display: grid;
     grid-template-columns: repeat(4,350px);
     grid-gap: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
 }
 
 .cardexp{
-    background-color: #0d0d0c;
+    background-color: #000000;
     border-radius: 15px;
-    color: #f0f8fffa;
+    color: #ffffff;
     padding: 10px 15px;
+
 }
 
 .cardexp h2{
@@ -218,9 +243,10 @@ footer ul li{
 
 .cardexp li{
     height: 30px;
+    width: 160px;
 }
 
-/**********************************************************************FORMULARIO***********************************************************/
+/*******************************************************FORMULARIO***********************************************************/
 
 .itemform{
     display: grid;
@@ -235,7 +261,7 @@ footer ul li{
 
 .itemform input, .itemform textarea{
     border-radius: 5px;
-    border: 1px solid #f0f8fffa
+    border: 1px solid #f6fbfffa;
 }
 
 input[type="submit"]{
@@ -246,7 +272,4 @@ input[type="submit"]{
     grid-column: 2/3;
     justify-self: end;
 }
-
-
-
 
